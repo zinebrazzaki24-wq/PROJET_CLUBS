@@ -1,0 +1,45 @@
+<?php include 'header.php'; ?>
+
+<div class="container" style="max-width: 450px; margin-top: 4rem;">
+    
+    <div class="card">
+        <h2 style="text-align: center; color: var(--primary); margin-bottom: 2rem;">Créer un compte</h2>
+        
+        <form action="#" method="POST">
+            
+            <div style="margin-bottom: 1.2rem;">
+                <label for="nom" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Nom complet</label>
+                <input type="text" id="nom" name="nom" placeholder="Ex: Jean Dupont" required 
+                       style="width: 100%; padding: 0.75rem; border: 1px solid #D1D5DB; border-radius: 6px; box-sizing: border-box; font-family: inherit;">
+            </div>
+
+            <div style="margin-bottom: 1.2rem;">
+                <label for="email" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Adresse e-mail</label>
+                <input type="email" id="email" name="email" placeholder="etudiant@campus.edu" required 
+                       style="width: 100%; padding: 0.75rem; border: 1px solid #D1D5DB; border-radius: 6px; box-sizing: border-box; font-family: inherit;">
+            </div>
+
+            <div style="margin-bottom: 1.2rem;">
+                <label for="password" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Mot de passe</label>
+                <input type="password" id="password" name="password" placeholder="••••••••" required 
+                       style="width: 100%; padding: 0.75rem; border: 1px solid #D1D5DB; border-radius: 6px; box-sizing: border-box; font-family: inherit;">
+            </div>
+
+            <div style="margin-bottom: 2rem;">
+                <label for="password_confirm" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Confirmer le mot de passe</label>
+                <input type="password" id="password_confirm" name="password_confirm" placeholder="••••••••" required 
+                       style="width: 100%; padding: 0.75rem; border: 1px solid #D1D5DB; border-radius: 6px; box-sizing: border-box; font-family: inherit;">
+            </div>
+
+            <button type="submit" class="btn" style="width: 100%; padding: 0.8rem; font-size: 1rem;">S'inscrire</button>
+        </form>
+
+        <p style="text-align: center; margin-top: 1.5rem; font-size: 0.9rem; color: #6B7280;">
+            Déjà inscrit ? <br>
+            <a href="login.php" style="color: var(--primary); text-decoration: none; font-weight: bold;">Se connecter</a>
+        </p>
+    </div>
+
+</div>
+
+<?php include 'footer.php'; ?>
